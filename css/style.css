@@ -173,20 +173,7 @@ footer svg{
     list-style: none;
 }
 
-/*.actions{
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px 0;
-}
 
-.actions button{
-    margin-left: 10px;
-    background-color: red;
-    color: white;
-    padding: 6px;
-    border: none;
-    border-radius: 3px;
-} */
 
 .tienda{
     display: grid;
