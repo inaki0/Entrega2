@@ -1,0 +1,176 @@
+h1 {
+	color: $color1;
+	text-align: center;
+}
+h2 {
+	color: $color1;
+	text-align: center;
+}
+.botonera {
+	img {
+		width: 150px;
+	}
+	background-color: $background-color_1;
+	a {
+		color: $color2;
+	}
+}
+nav {
+	background-color: $background-color_1;
+	padding: 6px 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	img {
+		width: 150px;
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		li {
+			margin-right: 12px;
+			a {
+				text-decoration: none;
+				color: $color2;
+				font-size: 1em;
+			}
+		}
+	}
+}
+footer {
+	background-color: $background-color_1;
+	padding: 6px 30px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	svg {
+		width: 30px;
+		height: 30px;
+		fill: white;
+		margin-right: 12px;
+	}
+}
+header {
+	img {
+		width: 100%;
+	}
+}
+main {
+	section {
+		padding: 20px 30px;
+	}
+}
+.products-home {
+	padding: 20px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	figure {
+		width: 30%;
+		border: solid 1px black;
+		border-radius: 4px;
+		margin-bottom: 20px;
+		padding: 10px 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		figcaption {
+			color: $color1;
+		}
+		p {
+			text-align: center;
+			color: $color3;
+		}
+		button {
+			border: none;
+			background-color: $background-color_2;
+			padding: 6px;
+			color: $color4;
+			border-radius: 4px;
+			margin: 10px;
+			&:hover {
+				cursor: pointer;
+				background-color: $background-color_3;
+			}
+		}
+	}
+}
+.home {
+	display: flex;
+	padding: 20px 30px;
+	justify-content: space-between;
+	margin-right: 60px;
+	align-items: center;
+}
+.products {
+	padding: 20px 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.filters {
+	padding: 0 20px 30px 30px;
+	a {
+		color: $color5;
+		font-size: 1em;
+		text-decoration: none;
+		margin-bottom: 4px;
+		text-transform: lowercase;
+		&:hover {
+			color: $color4;
+		}
+	}
+	span {
+		display: block;
+		color: $color1;
+		margin: 10px 0;
+		letter-spacing: 1px;
+		font-size: 1em;
+		font-weight: 300;
+	}
+	label {
+		font-size: 1em;
+		font-weight: 300;
+	}
+	select {
+		color: $color1;
+		border: none;
+		background-color: $background-color_4;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	li {
+		padding-left: 10px;
+		list-style: none;
+	}
+}
+.tienda {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	grid-template-areas: "filters prod1 prod2" "filters prod3 prod4" "filters prod5 prod6";
+	gap: 5px;
+	.filters {
+		grid-area: filters;
+	}
+	.prod1 {
+		grid-area: prod1;
+	}
+	.prod2 {
+		grid-area: prod2;
+	}
+	.prod3 {
+		grid-area: prod3;
+	}
+	.prod4 {
+		grid-area: prod4;
+	}
+	.prod5 {
+		grid-area: prod5;
+	}
+	.prod6 {
+		grid-area: prod6;
+	}
+}

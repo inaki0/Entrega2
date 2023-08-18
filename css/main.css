@@ -1,5 +1,4 @@
-@import "https://fonts.googleapis.com/css2? family= Kanit:wght@300;400 & display=swap";
-/* TIENDA GRID */
+@import url("https://fonts.googleapis.com/css2? family= Kanit:wght@300;400 & display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,12 +7,12 @@
 }
 
 h1 {
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
 h2 {
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -24,7 +23,7 @@ h2 {
   width: 150px;
 }
 .botonera a {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 nav {
@@ -47,7 +46,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1em;
 }
 
@@ -91,7 +90,7 @@ main section {
   justify-content: center;
 }
 .products-home figure figcaption {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .products-home figure p {
   text-align: center;
@@ -107,7 +106,7 @@ main section {
 }
 .products-home figure button:hover {
   cursor: pointer;
-  background-color: rgb(57, 255, 100);
+  background-color: rgb(0, 255, 47);
 }
 
 .home {
@@ -140,7 +139,7 @@ main section {
 }
 .filters span {
   display: block;
-  color: black;
+  color: rgb(0, 0, 0);
   margin: 10px 0;
   letter-spacing: 1px;
   font-size: 1em;
@@ -151,7 +150,7 @@ main section {
   font-weight: 300;
 }
 .filters select {
-  color: black;
+  color: rgb(0, 0, 0);
   border: none;
   background-color: white;
   margin-bottom: 10px;
@@ -189,32 +188,4 @@ main section {
 }
 .tienda .prod6 {
   grid-area: prod6;
-}
-
-@media (width < 1065px) {
-  .products-home figure {
-    width: 50%;
-  }
-}
-@media (width < 768px) {
-  .products-home figure {
-    width: 100%;
-  }
-  .tienda {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, auto);
-    grid-template-areas: "filters" "prod1" "prod2" "prod3" "prod4" "prod5" "prod6";
-  }
-  .tienda .filters span {
-    display: none;
-  }
-  .tienda .filters ul {
-    display: none;
-  }
-  .tienda .filters label {
-    display: none;
-  }
-  .tienda .filters input {
-    display: none;
-  }
 }/*# sourceMappingURL=main.css.map */
